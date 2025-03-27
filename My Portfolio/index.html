@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="jacket.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Accueil</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="card">
+        <div class="content">
+            <img src="profile.PNG" width="120px" class="avatar">
+            <h2>Rayan Madi</h2>
+            <p>UI/UX Designer & Developpeur Fullstack <br>Donnez vie à vos projets !</p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/rayan-madi-646670346"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/rayannn075"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Mowwzzie"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <button><a href="contact.html">Contact</a></button>
+        </div>
+    </div>
+    <div class="projets">
+        <div class="contentnants">
+            <h2>Mes Projets</h2>
+         <a href="contact.html"><img src="stonks.jpg" width="120px" class="lesprojets"> </a>
+
+        </div>
+    </div>
+    <footer class="Bottom"> 
+        <hr> 
+        <p>Copyright © Madi Rayan 2025. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+
+        const hamburger = document.getElementById('hamburger-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>  
+</html>
